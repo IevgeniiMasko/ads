@@ -1,0 +1,19 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comments__title {
+  font-size: 20px;
+}
+
+.comments__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.comments__item {
+  list-style-type: circle;
+  font-style: italic;
+}

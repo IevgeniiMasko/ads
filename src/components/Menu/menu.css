@@ -1,0 +1,25 @@
+.menu {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* margin-top: 100px; */
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: rgb(199, 219, 225);
+}
+
+.menu__link {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.menu__link_clicked {
+  color: green;
+}
+
+.menu__link:hover {
+  color: green;
+}
