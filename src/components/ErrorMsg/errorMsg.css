@@ -1,0 +1,37 @@
+.error-msg {
+  position: fixed;
+  z-index: 100;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 20px 40px;
+  min-width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: lightcoral;
+
+  font-size: 18px;
+
+  transition: all 1s ease-in-out;
+}
+
+.error-msg__show {
+  top: 30%;
+}
+
+.error-msg__close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(167, 105, 105, 0.285);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.error-msg__close:hover {
+  background-color: rgba(167, 105, 105, 0.681);
+}

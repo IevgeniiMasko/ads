@@ -5,47 +5,47 @@ import { MenuContext } from "../../App";
 import "./menu.css";
 
 const Menu = () => {
-  const { selectedMenu, setSelectedMenu, setAdItem } = useContext(MenuContext);
+  const { selectedMenu, setSelectedMenu, setItemId } = useContext(MenuContext);
 
   const clickMenuHandler = (e) => {
     const linkName = e.target.closest("li").dataset.name;
     setSelectedMenu(linkName);
-    setAdItem(null);
+    setItemId(null);
   };
 
   return (
     <nav className="menu">
       <ul className="menu__list">
         <li className="menu__item" data-name="news">
-          <a
-            href="#"
+          <button
+            type="button"
             className={`menu__link ${
               selectedMenu === "news" ? "menu__link_clicked" : ""
             }`}
             onClick={clickMenuHandler}
           >
             News
-          </a>
+          </button>
         </li>
         <li className="menu__item" data-name="show" onClick={clickMenuHandler}>
-          <a
-            href="#"
+          <button
+            type="button"
             className={`menu__link ${
               selectedMenu === "show" ? "menu__link_clicked" : ""
             }`}
           >
             Shows
-          </a>
+          </button>
         </li>
         <li className="menu__item" data-name="jobs" onClick={clickMenuHandler}>
-          <a
-            href="#"
+          <button
+            type="button"
             className={`menu__link ${
               selectedMenu === "jobs" ? "menu__link_clicked" : ""
             }`}
           >
             Jobs
-          </a>
+          </button>
         </li>
       </ul>
     </nav>

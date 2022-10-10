@@ -1,7 +1,6 @@
 .menu {
   margin: 0 auto;
   margin-bottom: 20px;
-  /* margin-top: 100px; */
 }
 
 .menu__list {
@@ -14,6 +13,7 @@
 .menu__link {
   font-size: 30px;
   font-weight: 700;
+  background-color: inherit;
 }
 
 .menu__link_clicked {

@@ -1,20 +1,52 @@
+.ads,
 .table-ads {
   margin: 0 auto;
 }
 
-/* .table-ads th, */
+.ads__nodata,
+.ads__loading {
+  font-size: 20px;
+  text-align: center;
+}
+
 .table-ads td {
   border: 1px solid lightgray;
   cursor: pointer;
 }
 
-.table-ads th {
-  background-color: lightblue;
-  cursor: pointer;
+.table-ads__body tr:hover {
+  background-color: rgba(243, 243, 243, 0.524);
 }
 
-.table-ads th,
+.table-ads th {
+  position: relative;
+  background-color: lightblue;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+.table-ads th:hover {
+  background-color: rgb(127, 198, 222);
+}
+
 .table-ads td {
   padding: 0 15px;
   font-size: 18px;
+}
+
+.table-ads__sorting-arrows {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+
+  padding: 5px;
+  font-size: 12px;
+}
+
+.table-ads__sorting_active {
+  color: rgb(192, 0, 0);
 }
