@@ -15,9 +15,10 @@ export const timeAgoToDate = (timeAgo) => {
       agoMeasure = "Date";
     if (timeAgoArr.includes("month") || timeAgoArr.includes("months"))
       agoMeasure = "Month";
+    if (timeAgoArr.includes("year") || timeAgoArr.includes("years"))
+      agoMeasure = "FullYear";
 
     date[`set${agoMeasure}`](date[`get${agoMeasure}`]() - agoNumber);
-    date.setMinutes(0, 0);
     return date;
   } catch (error) {
     return "invalid date";

@@ -2,7 +2,7 @@ import { React, useState, useEffect, useContext } from "react";
 import axios from "axios";
 
 import { MenuContext } from "../../App";
-import CommentRecur from "../CommentRec";
+import CommentRecur from "./CommentRec";
 
 import "./comment.css";
 

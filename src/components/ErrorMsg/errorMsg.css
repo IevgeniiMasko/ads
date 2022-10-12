@@ -5,6 +5,9 @@
   left: 50%;
   transform: translateX(-50%);
 
+  opacity: 0;
+  visibility: hidden;
+
   padding: 20px 40px;
   min-width: 300px;
   text-align: center;
@@ -17,6 +20,9 @@
 }
 
 .error-msg__show {
+  opacity: 1;
+  visibility: visible;
+
   top: 30%;
 }
 
